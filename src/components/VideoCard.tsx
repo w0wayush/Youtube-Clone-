@@ -16,13 +16,13 @@ export function VideoCard(props: any) {
           className="rounded-lg w-full h-full object-cover"
           alt="Main Image"
         />
-        <div className="absolute top-2 right-2 bg-gray-800 rounded-full p-1">
+        {/*         <div className="absolute top-2 right-2 bg-gray-800 rounded-full p-1">
           <img
             src={props.thumbImage}
             className="rounded-full w-10 h-10 object-cover"
             alt="Thumbnail"
           />
-        </div>
+        </div> */}
       </div>
       <Line progress={10} />
       <div className="grid grid-cols-12 pt-2">
