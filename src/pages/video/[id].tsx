@@ -1,7 +1,6 @@
 import { Appbar } from "@/components/Appbar";
 import { VideoCardHorizontal } from "@/components/VideoCardHorizontal";
 import { VIDEOS } from "@/videos";
-import { videos } from "@/videos";
 
 export default function VideoPage() {
   return (
@@ -9,9 +8,12 @@ export default function VideoPage() {
       <Appbar />
       <div className="grid gap-4 grid-cols-12 pt-5">
         <div className="col-span-12 md:col-span-9 sm:col-span-8">
-          <video controls width={"100%"} height={"720px"}>
-            <source src="/videos/solo.mp4" type="video/mp4" />
-          </video>
+          <video
+            controls
+            src="/videos/solo.mp4"
+            width={"100%"}
+            height={"720px"}
+          />
           <div className="flex">
             <img
               className="w-12 mt-3 h-12 rounded-full "
